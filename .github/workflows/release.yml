@@ -1,9 +1,10 @@
 name: Release
-on: workflow_dispatch
-  inputs:
-    version:
-      description: The git tag for the version to use for index-demo.html
-      required: true
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: The git tag for the version to use for index-demo.html
+        required: true
 env:
   BUCKET: models-resources
   PREFIX: starter-projects
